@@ -25,7 +25,7 @@ def grid_score_calc(grid_info, occupancy_rate):
     # calculate the approx num of bikes in area over 8 years of data 
     bicycles_in_area_8_years = ((grid_info[0] * 2 + (grid_info[1] + norm)) * 365 * 8) * occupancy_rate 
 
-    # multiply the percentage by 1000 to move results up 3 decimal places, *********** you may not need to do this ********************!!!!!!!!!!!!!!!!!!
+    # multiply the percentage by 1000 to move results up 3 decimal places
     stolen_bicycle_percentage = (grid_info[2] + norm) / bicycles_in_area_8_years * 1000
 
     return stolen_bicycle_percentage

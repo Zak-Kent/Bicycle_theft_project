@@ -44,7 +44,7 @@ class location_info:
     def racks_within_distance(self, dist=150):
         """find all racks within provied dist value and return their lat/long, and theft_score"""
 
-        sql_state = """SELECT bilinear_score, degy, degx 
+        sql_state = """SELECT bilinear_score, degy, degx, gid 
         FROM bicycle_parking_pdx
         WHERE ST_Distance(%s::geography, bicycle_parking_pdx.geom::geography) <= %s;"""
         sql_data = (self.geom, dist)
