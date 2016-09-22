@@ -12,7 +12,7 @@ To get the rate of theft in each square we take the number of bicycle thefts in 
 
 Below is how the rate of theft was calculated. 
 
-Rate of theft = # of thefts + 1 / ((# bicycle parking opportunities + 1) * 365 * 8) * .3 
+<b>Rate of theft = # of thefts + 1 / ((# bicycle parking opportunities + 1) * 365 * 8) * .3 </b>
 
 In the equation above the 1 added to the # of thefts and to the # of parking opportunities is our normalization term and the .3 multiplied at the end represents the average occupancy of bicycle racks which was calculated from a brief survey of racks in Portland. The # of bicycle parking opportunities was calculated by counting the # of street corners and # bicycle racks in each square. Street corners count as one bicycle space and racks as two. 
 
@@ -24,7 +24,7 @@ This process gives us the rate of theft at each bicycle rack and lets us compare
 
 With each bicycle racks’ theft rate known we can help users make more informed decisions on where to park their bicycles.            
 
-Potential areas of improvement for this project: 
+<h3>Potential areas of improvement for this project</h3> 
 
 -Currently we’re only looking at the average rate of theft across the eight year period which doesn’t account for improvements in safety over time. A potential fix would be to develop a system that accounts for changes in theft rate month to month. Look at LSTM neural nets. 
 
@@ -35,7 +35,7 @@ Potential areas of improvement for this project:
 -We're also not accounting for the two leap years that would adjusted our total number of parked bicycles slightly. 
 
 
-Brief description of scripts in repo
+<h3>Brief description of scripts in repo</h3>
 
 -bike_grid_calc.py:  Calculates and writes the number of street corners, bicycle racks, and bicycle thefts in each square to DB.
 
